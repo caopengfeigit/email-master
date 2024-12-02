@@ -5,7 +5,7 @@ import { store, EventBus } from "@/store";
 import { changeMailboxStatusTxt, optionLog } from "@/log";
 
 class WebSocketManager {
-  private url: string = "ws://127.0.0.1:8183/ws";
+  private url: string = "ws://8.137.92.236:8183/ws";
   private socket: WebSocket | null = null;
   private messageHandlers: Record<string, (message: any) => void> = {};
   private heartbeatInterval: any;
